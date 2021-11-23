@@ -2,6 +2,7 @@ package Voronin.MicroService.Lab1;
 
 import Voronin.MicroService.Lab1.Models.Gun;
 import Voronin.MicroService.Lab1.Parser.ParserDom;
+import Voronin.MicroService.Lab1.Parser.ParserJAXB;
 
 import java.io.File;
 import java.util.List;
@@ -13,6 +14,9 @@ public class Main {
 
         ParserDom parserDom = new ParserDom();
         printList(parserDom.parse(inputFile));
+
+        ParserJAXB parserJAXB = new ParserJAXB();
+        printList(parserJAXB.parse(inputFile));
     }
 
     private static void printList(List<Gun> list) {
