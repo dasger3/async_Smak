@@ -1,14 +1,10 @@
-package Async.Lab2.entities;
+package Voronin.Async.Lab2.entities;
+
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.OptionalDouble;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
 
 @Getter
 @AllArgsConstructor

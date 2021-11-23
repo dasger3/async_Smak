@@ -1,4 +1,4 @@
-package Async.Lab1;
+package Galushko.Async.Lab1;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

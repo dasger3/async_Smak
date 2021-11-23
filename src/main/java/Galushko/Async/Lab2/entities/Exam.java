@@ -1,4 +1,4 @@
-package Async.Lab2.entities;
+package Galushko.Async.Lab2.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

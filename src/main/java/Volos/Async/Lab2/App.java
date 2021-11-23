@@ -1,4 +1,4 @@
-package Async.Lab2;
+package Volos.Async.Lab2;
 
 /**
  * Hello world!

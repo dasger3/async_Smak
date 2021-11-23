@@ -1,9 +1,11 @@
-package Async.Lab2.repositories;
+package Galushko.Async.Lab2.repositories;
+
+import Galushko.Async.Lab2.entities.Exam;
+import Galushko.Async.Lab2.entities.Exam.Type;
+import Galushko.Async.Lab2.entities.Student;
 
 import java.util.Arrays;
 import java.util.List;
-import Async.Lab2.entities.Exam;
-import Async.Lab2.entities.Student;
 
 public class StudentRepository {
 
@@ -14,19 +16,19 @@ public class StudentRepository {
         Student.builder()
             .name("1")
             .rating(10)
-            .exams(Arrays.asList(Exam.of(Exam.Type.ENGLISH, 181)))
+            .exams(Arrays.asList(Exam.of(Type.ENGLISH, 181)))
             .build(),
         Student.builder()
             .name("2")
             .rating(11)
-            .exams(Arrays.asList(Exam.of(Exam.Type.ENGLISH, 182),
-                Exam.of(Exam.Type.MATH, 190)))
+            .exams(Arrays.asList(Exam.of(Type.ENGLISH, 182),
+                Exam.of(Type.MATH, 190)))
             .build(),
         Student.builder()
             .name("3")
             .rating(11)
-            .exams(Arrays.asList(Exam.of(Exam.Type.ENGLISH, 183),
-                Exam.of(Exam.Type.MATH, 190)))
+            .exams(Arrays.asList(Exam.of(Type.ENGLISH, 183),
+                Exam.of(Type.MATH, 190)))
             .build(),
         Student.builder()
             .name("4")
