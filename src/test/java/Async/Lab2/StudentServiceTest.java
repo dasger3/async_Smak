@@ -1,18 +1,19 @@
-package ua.kpi.services;
+package Async.Lab2;
 
-import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.hamcrest.Matchers.hasSize;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
-import static org.hamcrest.MatcherAssert.assertThat;
+import Async.Lab2.entities.Exam;
+import Async.Lab2.entities.Student;
+import Async.Lab2.repositories.StudentRepository;
+import Async.Lab2.services.StudentService;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
-import org.junit.jupiter.api.Test;
-import ua.kpi.entities.Exam;
-import ua.kpi.entities.Exam.Type;
-import ua.kpi.entities.Student;
-import ua.kpi.repositories.StudentRepository;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.hasSize;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 class StudentServiceTest {
 
@@ -52,7 +53,7 @@ class StudentServiceTest {
     void should_find_student_with_max_english() {
         StudentRepository studentRepository = createStudentRepositoryWithAllStudents();
         StudentService studentService = new StudentService(studentRepository);
-        Optional<Student> studentOpt = studentService.findWithMaxExam(Type.ENGLISH);
+        Optional<Student> studentOpt = studentService.findWithMaxExam(Exam.Type.ENGLISH);
         assertEquals(Optional.of(thirdStudent), studentOpt);
     }
 
@@ -61,7 +62,7 @@ class StudentServiceTest {
         StudentRepository studentRepository = mock(StudentRepository.class);
         when(studentRepository.findAll()).thenReturn(Arrays.asList(firstStudent, fourthStudent));
         StudentService studentService = new StudentService(studentRepository);
-        Optional<Student> studentOpt = studentService.findWithMaxExam(Type.MATH);
+        Optional<Student> studentOpt = studentService.findWithMaxExam(Exam.Type.MATH);
         assertEquals(Optional.empty(), studentOpt);
     }
 
@@ -70,7 +71,7 @@ class StudentServiceTest {
         StudentRepository studentRepository = createStudentRepositoryWithAllStudents();
         StudentService studentService = new StudentService(studentRepository);
         final double mathPassRate = 190.0;
-        List<Student> studentsWithMath = studentService.findWithEnoughExam(Type.MATH, mathPassRate);
+        List<Student> studentsWithMath = studentService.findWithEnoughExam(Exam.Type.MATH, mathPassRate);
         assertThat(studentsWithMath, containsInAnyOrder(secondStudent, thirdStudent));
     }
 
@@ -79,7 +80,7 @@ class StudentServiceTest {
         StudentRepository studentRepository = createStudentRepositoryWithAllStudents();
         StudentService studentService = new StudentService(studentRepository);
         final double englishPassRate = 190.0;
-        List<Student> studentsWithEnglish = studentService.findWithEnoughExam(Type.ENGLISH, englishPassRate);
+        List<Student> studentsWithEnglish = studentService.findWithEnoughExam(Exam.Type.ENGLISH, englishPassRate);
         assertThat(studentsWithEnglish, hasSize(0));
     }
 

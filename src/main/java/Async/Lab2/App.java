@@ -1,4 +1,4 @@
-package ua.kpi;
+package Async.Lab2;
 
 /**
  * Hello world!

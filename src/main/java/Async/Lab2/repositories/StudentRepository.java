@@ -1,9 +1,9 @@
-package ua.kpi.repositories;
+package Async.Lab2.repositories;
 
 import java.util.Arrays;
 import java.util.List;
-import ua.kpi.entities.Exam;
-import ua.kpi.entities.Student;
+import Async.Lab2.entities.Exam;
+import Async.Lab2.entities.Student;
 
 public class StudentRepository {
 

@@ -1,4 +1,4 @@
-package ua.kpi.entities;
+package Async.Lab2.entities;
 
 import java.util.ArrayList;
 import java.util.List;

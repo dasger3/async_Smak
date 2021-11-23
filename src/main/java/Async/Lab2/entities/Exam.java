@@ -1,4 +1,4 @@
-package ua.kpi.entities;
+package Async.Lab2.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

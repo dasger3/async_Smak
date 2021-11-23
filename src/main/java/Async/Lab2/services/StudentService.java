@@ -1,12 +1,12 @@
-package ua.kpi.services;
+package Async.Lab2.services;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-import ua.kpi.entities.Exam;
-import ua.kpi.entities.Exam.Type;
-import ua.kpi.entities.Student;
-import ua.kpi.repositories.StudentRepository;
+import Async.Lab2.repositories.StudentRepository;
+import Async.Lab2.entities.Exam;
+import Async.Lab2.entities.Exam.Type;
+import Async.Lab2.entities.Student;
 
 public class StudentService {
 
