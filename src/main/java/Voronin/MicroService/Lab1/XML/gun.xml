@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<guns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gun.xsd">
+  <!--1 or more repetitions:-->
+  <gun id="1">
+    <model>First model</model>
+    <handy>ONE_HANDED</handy>
+    <origin>Germany</origin>
+    <material>Iron</material>
+    <TTC>
+      <range>MIDDLE_500_1000</range>
+      <sightingRange>100.00</sightingRange>
+      <hasClip>true</hasClip>
+      <hasOptics>true</hasOptics>
+    </TTC>
+  </gun>
+
+  <gun id="2">
+    <model>Second model</model>
+    <handy>TWO_HANDED</handy>
+    <origin>France</origin>
+    <material>Iron</material>
+    <TTC>
+      <range>CLOSE_0_500</range>
+      <sightingRange>50.00</sightingRange>
+      <hasClip>true</hasClip>
+      <hasOptics>false</hasOptics>
+    </TTC>
+  </gun>
+
+  <gun id="3">
+    <model>Third model</model>
+    <handy>ONE_HANDED</handy>
+    <origin>USA</origin>
+    <material>Iron</material>
+    <TTC>
+      <range>MIDDLE_500_1000</range>
+      <sightingRange>550.50</sightingRange>
+      <hasClip>false</hasClip>
+      <hasOptics>true</hasOptics>
+    </TTC>
+  </gun>
+</guns>
