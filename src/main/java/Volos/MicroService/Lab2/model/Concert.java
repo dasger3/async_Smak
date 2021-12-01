@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -17,6 +18,10 @@ public class Concert {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idConcert;
+
+    private String name;
+
+    private Date date;
 
     @OneToMany
     private List<Actor> actorList;

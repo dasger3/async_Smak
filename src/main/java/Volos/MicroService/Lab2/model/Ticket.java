@@ -1,11 +1,12 @@
 package Volos.MicroService.Lab2.model;
 
-import Volos.MicroService.Lab2.model.Enums.TypeOfTicket;
+import Volos.MicroService.Lab2.model.enums.TypeOfTicket;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -18,11 +19,12 @@ public class Ticket {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ticketId;
 
-    private Integer place;
+    private String place;
 
     @Enumerated(EnumType.STRING)
     private TypeOfTicket typeOfTicket;
 
     private Double price;
 
+    private Date date;
 }

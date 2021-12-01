@@ -1,4 +1,4 @@
-package Volos.MicroService.Lab2.model.Enums;
+package Volos.MicroService.Lab2.model.enums;
 
 import Volos.MicroService.Lab2.exception.ObjectNotFoundException;
 

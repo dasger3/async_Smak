@@ -1,6 +1,6 @@
 package Volos.MicroService.Lab2.model;
 
-import Volos.MicroService.Lab2.model.Enums.TypeOfActor;
+import Volos.MicroService.Lab2.model.enums.TypeOfActor;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +15,6 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table (name = "actor")
-//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "actorId")
 public class Actor {
 
     @Id
