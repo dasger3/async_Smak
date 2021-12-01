@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<computers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="computer.xsd">
+  <!--1 or more repetitions:-->
+  <computer id="1">
+    <name>First computer</name>
+    <origin>USA</origin>
+    <price>99.44</price>
+    <critical>false</critical>
+    <Type>
+      <isPeripheral>true</isPeripheral>
+      <energyConsumption>132.00</energyConsumption>
+      <hasCooler>true</hasCooler>
+      <Ports>COM</Ports>
+    </Type>
+  </computer>
+
+  <computer id="2">
+    <name>Second computer</name>
+    <origin>Germany</origin>
+    <price>42.99</price>
+    <critical>false</critical>
+    <Type>
+      <isPeripheral>true</isPeripheral>
+      <energyConsumption>111.11</energyConsumption>
+      <hasCooler>true</hasCooler>
+      <Ports>LPT</Ports>
+    </Type>
+  </computer>
+
+  <computer id="3">
+    <name>Third computer</name>
+    <origin>Ukraine</origin>
+    <price>100.00</price>
+    <critical>true</critical>
+    <Type>
+      <isPeripheral>false</isPeripheral>
+      <energyConsumption>140.32</energyConsumption>
+      <hasCooler>true</hasCooler>
+      <Ports>USB</Ports>
+    </Type>
+  </computer>
+
+</computers>
