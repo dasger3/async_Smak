@@ -9,17 +9,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ActorRepository extends JpaRepository<Actor, Long> {
 
-    /*List<AdministrativeTerritorialUnit> findAll();
-
-    Optional<AdministrativeTerritorialUnit> findById (Long id);
-
-    Optional<AdministrativeTerritorialUnit> findByTitle(String title);*/
-
-
-//    Object save (AdministrativeTerritorialUnit atu);
-//
-//    void updateATU (AdministrativeTerritorialUnit atu);
-//
-//    void deleteATU (Long id);
-
 }
