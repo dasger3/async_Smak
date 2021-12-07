@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<knives xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="knife.xsd">
+  <!--1 or more repetitions:-->
+  <knife id="1">
+    <type>Knife</type>
+    <handy>TWO_HANDED</handy>
+    <origin>USA</origin>
+    <value>true</value>
+    <Visual>
+      <lengthOfKnife>30.00</lengthOfKnife>
+      <widthOfKnife>40.03</widthOfKnife>
+      <material>Iron</material>
+      <handle>Wood, oak</handle>
+      <bloodstream>true</bloodstream>
+    </Visual>
+  </knife>
+
+  <knife id="2">
+    <type>Dagger</type>
+    <handy>ONE_HANDED</handy>
+    <origin>Germany</origin>
+    <value>false</value>
+    <Visual>
+      <lengthOfKnife>10.00</lengthOfKnife>
+      <widthOfKnife>10.22</widthOfKnife>
+      <material>Plastic</material>
+      <handle>Wood, ash</handle>
+      <bloodstream>false</bloodstream>
+    </Visual>
+  </knife>
+
+  <knife id="3">
+    <type>Saber</type>
+    <handy>ONE_HANDED</handy>
+    <origin>England</origin>
+    <value>false</value>
+    <Visual>
+      <lengthOfKnife>90.00</lengthOfKnife>
+      <widthOfKnife>33.33</widthOfKnife>
+      <material>Iron</material>
+      <handle>Plastic</handle>
+      <bloodstream>true</bloodstream>
+    </Visual>
+  </knife>
+
+</knives>

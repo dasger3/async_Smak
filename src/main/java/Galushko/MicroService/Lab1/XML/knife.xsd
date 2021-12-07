@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="knives">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="knife" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+
+                            <xsd:element name="type" type="xsd:string"/>
+
+                            <xsd:element name="handy">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="ONE_HANDED"/>
+                                        <xsd:enumeration value="TWO_HANDED"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <xsd:element  name="origin">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="[A-Za-z]{2,}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <xsd:element name="value" type="xsd:boolean"/>
+
+                            <xsd:element name="Visual">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+
+                                        <xsd:element name="lengthOfKnife">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:double">
+                                                    <xsd:pattern value="\d+\.\d{2}"/>
+                                                    <xsd:minInclusive value="10"/>
+                                                    <xsd:maxInclusive value="100"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+
+                                        <xsd:element name="widthOfKnife">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:double">
+                                                    <xsd:pattern value="\d+\.\d{2}"/>
+                                                    <xsd:minInclusive value="10"/>
+                                                    <xsd:maxInclusive value="100"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+
+                                        <xsd:element name="material" type="xsd:string"/>
+
+                                        <xsd:element name="handle" type="xsd:string"/>
+
+                                        <xsd:element name="bloodstream" type="xsd:boolean"/>
+
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+
+                        </xsd:sequence>
+
+                        <xsd:attribute name="id" type="xsd:integer"/>
+
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+
+
